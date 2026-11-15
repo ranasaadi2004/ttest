@@ -1,0 +1,88 @@
+/* Fichier : styles/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+/* Grille de 3 colonnes pour les cartes */
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Carte individuelle */
+.carte {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 6px solid #94a3b8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.carte h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Bordures dynamiques selon le statut */
+.statut-dispo       { border-top-color: #16a34a; }
+.statut-louee       { border-top-color: #dc2626; }
+.statut-maintenance { border-top-color: #f59e0b; }
+
+/* Badges de catégories */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.badge-eco     { background: #0d9488; }
+.badge-suv     { background: #2563eb; }
+.badge-luxe    { background: #7c3aed; }
+.badge-inconnu { background: #64748b; }
+
+/* Section Récapitulatif */
+.recapitulatif {
+    background: #c3b2b2;
+    padding: 24px;
+    border-radius: 16px;
+    margin-top: 32px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.recapitulatif h2 {
+    font-size: 1.4rem;
+    color: #2a0f0f;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.recapitulatif h3 {
+    font-size: 1rem;
+    color: #684769;
+    margin: 16px 0 8px;
+}
+
+.recapitulatif ul {
+    padding-left: 20px;
+    color: #373a34;
+}
+
+.recapitulatif li {
+    margin-bottom: 6px;
+}
